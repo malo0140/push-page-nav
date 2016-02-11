@@ -24,6 +24,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background-color: #000;
+  font-family: "Ubuntu", "Arial", "sans-serif";
 }
 
 *, *:before, *:after {
@@ -42,14 +43,14 @@ body.noscript .toggle-btn {
 }
 
 header {
-  padding: 0 1em;
+  padding: 1em 1em;
   position: relative;
 }
 
 .toggle-btn {
   position: absolute;
   right: 1em;
-  top: 0;
+  top: 1em;
 }
 
 .navigation ul {
@@ -58,33 +59,41 @@ header {
 
 .navigation li {
   list-style-type: none;
-  color: .navigation li;
-}
-
-.navigation li :first-child a {
-  border-top: 1px solid #ccc;
 }
 
 .navigation li a {
   display: block;
   text-align: center;
   padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
   text-decoration: none;
   color: #fff;
 }
 
 .navigation li a:hover {
-  color: #3DBB9A;
+  color: #93DBD1;
   transition: all .5s ease-in-out;
+}
+
+.billboard {
+  height: 30em;
+  width: 100%;
+}
+
+.icon-umbrella {
+  color: #fff;
+  font-size: 50px;
+}
+
+.icon-umbrella:hover {
+  color: #93DBD1;
 }
 
 .toggle-btn,
 .close-btn {
   color: #fff;
   text-decoration: none;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 .toggle-btn:before,
@@ -93,7 +102,6 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #fff;
 }
 
 .toggle-btn span,
@@ -107,6 +115,13 @@ header {
 
 .close-btn {
   margin: 1em;
+}
+
+.clouds h1 {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  color: #93DBD1;
 }
 
 /**

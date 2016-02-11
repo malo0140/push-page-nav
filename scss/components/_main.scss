@@ -11,6 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background-color: $black;
+  font-family: $ubuntu;
 }
 
 
@@ -30,7 +31,7 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: 1em 1em;
   position: relative;
 
 }
@@ -38,7 +39,8 @@ header {
 .toggle-btn{
   position: absolute;
   right: 1em;
-  top: 0;
+  top: 1em
+  ;
 }
 
 .navigation{
@@ -47,37 +49,46 @@ header {
   }
   li{
     list-style-type: none;
-    color:
-    &:first-child a{
-      border-top: 1px solid $light-grey;
-    }
+    
     a{
       display: block;
       text-align: center;
       padding: .5em 1em;
-      border-bottom: 1px solid $light-grey;
       text-decoration: none;
       color: $white;
       &:hover{
         color: $teal;
         transition: all .5s ease-in-out;
+
       }
     }
   } // li
 } // .navigation
 
+.billboard{
+  height: 30em;
+  width: 100%;
+}
+
+.icon-umbrella {
+  color: $white;
+  font-size: 50px;
+  &:hover{
+    color: $teal;
+  }
+}
+
 .toggle-btn,
 .close-btn{
   color: $white;
   text-decoration: none;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   &:before{
     height: 40px;
     width: 40px;
     display: inline-block;
     padding: 13px 11px;
-    border: 1px solid $white;
 
   }
   span{
@@ -87,6 +98,16 @@ header {
 
 .close-btn{
   margin: 1em;
+}
+
+.clouds{
+  h1{
+  color: $white;
+  display: inline-block;
+  margin: 0;
+  color: $teal;
+}
+
 }
 
 /**
@@ -135,6 +156,7 @@ header {
   .close-btn{
     display: none;
   }
+
 }
 
 body.noscript .navigation{
