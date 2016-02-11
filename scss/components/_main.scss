@@ -68,7 +68,7 @@ header {
   width: 100%;
 }
 
-.icon-umbrella {
+.icon-cloud {
   color: $white;
   font-size: 30px;
   &:hover{
@@ -175,4 +175,23 @@ body.noscript .navigation{
     padding: 10px;
     opacity: 0.6;
   }
+}
+
+.icon{
+  color: $white;
+  text-align: right;
+  margin: 1em;
+  font-size: 25px;
+  opacity: 0.6;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.type{
+  color: $light-grey;
+  padding: .5em;
+  opacity: 0.6;
+  align-content: center;
+  display: block;
 }
