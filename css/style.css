@@ -71,7 +71,6 @@ header {
 
 .navigation li a:hover {
   color: #93DBD1;
-  transition: all .5s ease-in-out;
 }
 
 .billboard {
@@ -81,7 +80,7 @@ header {
 
 .icon-umbrella {
   color: #fff;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .icon-umbrella:hover {
@@ -172,6 +171,22 @@ header {
 body.noscript .navigation {
   position: static;
   right: auto;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image h1 {
+  position: absolute;
+  top: 320px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  padding: 10px;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */

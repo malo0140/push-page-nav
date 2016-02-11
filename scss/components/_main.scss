@@ -58,8 +58,6 @@ header {
       color: $white;
       &:hover{
         color: $teal;
-        transition: all .5s ease-in-out;
-
       }
     }
   } // li
@@ -72,7 +70,7 @@ header {
 
 .icon-umbrella {
   color: $white;
-  font-size: 50px;
+  font-size: 30px;
   &:hover{
     color: $teal;
   }
@@ -162,4 +160,19 @@ header {
 body.noscript .navigation{
   position: static;
   right: auto;
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  h1{
+    position: absolute;
+    top: 320px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    color: $white;
+    padding: 10px;
+    opacity: 0.6;
+  }
 }
