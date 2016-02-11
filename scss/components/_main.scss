@@ -10,6 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: $black;
 }
 
 
@@ -31,6 +32,7 @@ body{
 header {
   padding: 0 1em;
   position: relative;
+
 }
 
 .toggle-btn{
@@ -45,6 +47,7 @@ header {
   }
   li{
     list-style-type: none;
+    color:
     &:first-child a{
       border-top: 1px solid $light-grey;
     }
@@ -54,13 +57,18 @@ header {
       padding: .5em 1em;
       border-bottom: 1px solid $light-grey;
       text-decoration: none;
+      color: $white;
+      &:hover{
+        color: $teal;
+        transition: all .5s ease-in-out;
+      }
     }
   } // li
 } // .navigation
 
 .toggle-btn,
 .close-btn{
-  color: $text-color;
+  color: $white;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -69,7 +77,8 @@ header {
     width: 40px;
     display: inline-block;
     padding: 13px 11px;
-    border: 1px solid $light-grey;
+    border: 1px solid $white;
+
   }
   span{
     @include element-invisible;
@@ -97,7 +106,7 @@ header {
       height: 100%;
       position: relative;
       transform: translateX(0);
-      transition: all 300ms ease-in-out;
+      transition: all 650ms cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
     &[data-state="slide-open"] .sliding-canvas{
